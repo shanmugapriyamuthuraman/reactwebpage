@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import ApartmentIcon from '@mui/icons-material/Apartment';
 import './Home.scss';
 const Home = () => {
     const navItems = ['Home', 'About', 'Service','Project','Blog','Pages','Contact'];
@@ -15,26 +16,27 @@ const Home = () => {
     <div className='home'>
       <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
+      <AppBar component="nav" sx={{backgroundColor:"transparent"}} >
+        <Toolbar >
           <IconButton
-            color="inherit"
+            color=""
             aria-label="open drawer"
             edge="start"
-            sx={{ mr: 'center', display: { sm: 'none' } }}
+            sx={{ mr: '2', display: { sm: 'none' } }}
           >
-            <MenuIcon />
+            <ApartmentIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            <div className='logo'> Arkio</div>
+            
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: 'black' }}>
                 {item}
               </Button>
             ))}
@@ -61,8 +63,21 @@ const Home = () => {
         </Typography>
       </Box>
     </Box>
-  
+          <div className='banner'>
+            <div className='head'>
+            <p>Unique</p>
+            <h1>Creating Your Future </h1>
+            <h2>With <span class="color">Affection</span></h2>
+            <div className='button'>
+              <a href="">Discover project</a>
+            </div>
+            </div>
+            <div className='headimg'>
+              <img src="https://arkio-next.netlify.app/images/slider/s1.jpg" width="100%"></img>
+            </div>
+          </div>
     </div>
+    
   )
 }
 

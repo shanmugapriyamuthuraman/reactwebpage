@@ -1,3 +1,39 @@
 .home{
     background-color:transparent;
+    width:85%;
+    margin:auto;
+}
+.logo{
+    color:#070F4D;
+    font-size:2rem;
+}
+.banner{
+   display:flex;
+   width:100%;
+}
+.head{
+    width:49%
+}
+.color{
+    color: #caab06;
+}
+.head h1{
+    font-size: 3rem;
+    color:#070F4D ;
+    padding-top: 2rem;
+}
+.head h2{
+    font-size: 3rem;
+    color:#070F4D ;
+
+}
+.headimg{
+    width:49%;
+}
+.button a{
+    background-color:#caab06;
+    text-decoration: none;
+    color:white;
+    padding: 1.5rem;
+    font-size: 1.2rem;
 }
