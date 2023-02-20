@@ -3,6 +3,9 @@
     width:85%;
     margin:auto;
 }
+.web{
+    background-color:#f8f9fa ;
+}
 .logo{
     color:#070F4D;
     font-size:2rem;
@@ -10,6 +13,7 @@
 .banner{
    display:flex;
    width:100%;
+   padding-bottom: 5rem;
 }
 .head{
     width:49%
@@ -27,8 +31,15 @@
     color:#070F4D ;
 
 }
+.imgborder{
+    
+  
+    
+}
+
 .headimg{
     width:49%;
+    
 }
 .button a{
     background-color:#caab06;
@@ -36,4 +47,35 @@
     color:white;
     padding: 1.5rem;
     font-size: 1.2rem;
+}
+.about{
+    display:flex;
+        
+}
+.content h1{
+    color:#070F4D;
+    font-size: 2.7rem;
+}
+.content i{
+    font-size: 1.4rem;
+}
+.aboutbut{
+    padding-top: 3rem;
+}
+.aboutbut a{
+    background-color: #caab06;
+    color:white;
+    padding: 1.2rem;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.content h3{
+    color:#caab06;
+}
+.content h3::before{
+    content:"________";
+    width:20%;
+    height:20vh;
+    color: #caab06;
 }

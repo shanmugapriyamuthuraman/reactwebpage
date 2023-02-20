@@ -10,10 +10,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import './Home.scss';
+
 const Home = () => {
     const navItems = ['Home', 'About', 'Service','Project','Blog','Pages','Contact'];
   return (
-    <div className='home'>
+
+    <div className='web'>
+      <div className='home'>
       <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar component="nav" sx={{backgroundColor:"transparent"}} >
@@ -31,7 +34,9 @@ const Home = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            <div className='logo'> Arkio</div>
+            <div className='logo'> 
+            <img src="https://arkio-next.netlify.app/_next/static/media/logo.33d26c58.svg"></img>
+            </div>
             
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -72,10 +77,27 @@ const Home = () => {
               <a href="">Discover project</a>
             </div>
             </div>
+            {/* <div className='imgborder'> */}
             <div className='headimg'>
               <img src="https://arkio-next.netlify.app/images/slider/s1.jpg" width="100%"></img>
             </div>
+            {/* </div> */}
           </div>
+          <div className='about'>
+          <div className='img'>
+        <img src="https://arkio-next.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout.3cb234ee.jpg&w=640&q=75" width='80%'></img>
+      </div>
+      <div className='content'>
+          <h3>About Us</h3>
+          <h1>We Offer You Profesional Interior Design</h1>
+          <i>Over 25 years Liarch helping investors building their drea & business goals go to the perfection</i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac enim aliquam feugiat ullamcorper. Id risus mattis neque, ullamcorper. Sed sit commodo vestibulum cras in cras. Nec proin scelerisque quis nisl vitae, egestas non. Fringilla auctor.</p>
+          <div className='aboutbut'>
+            <a href=''>Discover More</a>
+          </div>
+      </div>
+      </div>
+      </div>
     </div>
     
   )
